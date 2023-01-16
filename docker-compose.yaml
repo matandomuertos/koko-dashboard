@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+
+  koko-web:
+    image: matandomuertos/koko-dashboard-web:latest
+    container_name: koko-web
+    environment:
+      - REACT_APP_API='http://koko-api:3000'
+    volumes:
+      - ${PWD}/sample-urls.yml:/usr/share/nginx/html/config/urls.yml
+    ports:
+      - 80:80
+    restart: unless-stopped
+
+  koko-api:
+    image: matandomuertos/koko-dashboard-api:latest
+    container_name: koko-api
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 3000:3000
+    restart: unless-stopped

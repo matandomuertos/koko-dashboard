@@ -1,0 +1,27 @@
+Koko-dashboard: 
+  - title: Koko-Web
+    url: http://localhost
+    containerName: koko-web
+  - title: Koko-api
+    url: http://localhost/api/v1
+    containerName: koko-api
+
+Category2: 
+  - title: Web1
+    url: https://example.com/card1
+    image: https://www.seekpng.com/png/detail/311-3113352_world-wide-web-logo-png-website-image-without.png
+    containerName: web1
+  - title: Web2
+    url: https://example.com/card2
+    image: https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Logo_Sitio_Web.png/546px-Logo_Sitio_Web.png
+    containerName: web2
+  - title: Web3
+    url: https://example.com/card3
+    image: https://www.freepnglogos.com/uploads/logo-website-png/logo-website-file-globe-icon-svg-wikimedia-commons-21.png
+    containerName: web3
+
+Category3: 
+  - title: Web4
+    url: https://example.com/card4
+    containerName: web4
+    

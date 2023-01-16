@@ -1,0 +1,20 @@
+{
+  "name": "koko-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matandomuertos/koko-dashboard.git"
+  },
+  "author": "Nahuel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matandomuertos/koko-dashboard/issues"
+  },
+  "homepage": "https://github.com/matandomuertos/koko-dashboard#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
