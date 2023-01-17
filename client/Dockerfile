@@ -6,15 +6,14 @@ COPY . .
 
 RUN npm install
 
-ENV NODE_ENV production
-ENV REACT_APP_API http://localhost:3000
-
 RUN npm run build
 
 
 FROM nginx:alpine
 
 COPY --from=builder /app/build /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
