@@ -5,8 +5,6 @@ services:
   koko-web:
     image: test-front
     container_name: koko-web
-    environment:
-      - REACT_APP_API='http://koko-api:3000'
     volumes:
       - ${PWD}/sample-urls.yml:/usr/share/nginx/html/config/urls.yml
     ports:
