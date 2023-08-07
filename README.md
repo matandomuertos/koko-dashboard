@@ -2,6 +2,8 @@
 
 Koko-dashboard is a simple, easy-to-use homelab homepage that allows you to manage all of your Docker containers in one centralized place.
 
+It's basically the evolution of my old [server-homepage](https://github.com/matandomuertos/server-homepage).
+
 With Koko-dashboard, you can easily add all of your Docker containers to a simple YAML file and then access all of your apps from one convenient location. Additionally, Koko-dashboard allows you to easily view the status of your containers and to perform basic actions such as pausing, starting, stopping, and restarting them.
 
 <p align="center" style="margin-bottom: 0px !important;">
